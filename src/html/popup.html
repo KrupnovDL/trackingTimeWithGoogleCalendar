@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tracking time with Google Calendar</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/TTWGC.min.css">
+    </head>
+    <body><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <div class="tracking-app">
+            <button class="tracking-app__add-item-button add-item-button" type="button">
+                <img class="add-item-button__icon" width="48" height="48" alt="Plus" src="icons/plus.svg"/>
+            </button>
+        </div>
+
+        <template id="activity-list">
+            <ul class="tracking-app__list activity-list"></ul>
+        </template> 
+
+        <template id="activity-item">
+            <li class="activity-list__item activity-item">
+                <div class="activity-item__time">Test time</div>
+                <p class="activity-item__title">Test title</p>
+                <button class="activity-item__control-button start-tracking-button" type="button">
+                    <img class="" width="40" height="40" alt="Start" src="icons/play_arrow.svg"/>
+                </button>
+                <button class="activity-item__control-button delete-item-button" type="button">
+                    <img class="" width="40" height="40" alt="Start" src="icons/delete.svg"/>
+                </button>
+            </li>
+        </template>
+        <script src="js/TTWGC.min.js"></script>
+    </body>
+</html>

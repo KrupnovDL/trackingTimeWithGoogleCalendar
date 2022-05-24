@@ -1,0 +1,38 @@
+.activity-item {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20% 1fr 48px 48px;
+    gap: 4px;
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.activity-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.activity-item::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 16px);
+    background-color: #dadce0;
+    bottom: 0;
+    left: 8px;
+}
+
+.activity-item__time {
+    font-size: 24px;
+    text-align: center;
+}
+
+.activity-item__title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.activity-item__control-button {
+    padding: 0;
+}
