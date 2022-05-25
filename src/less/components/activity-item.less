@@ -5,12 +5,7 @@
     grid-template-columns: 20% 1fr 48px 48px;
     gap: 4px;
     width: 100%;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-.activity-item:not(:last-child) {
-    margin-bottom: 8px;
+    padding: 4px;
 }
 
 .activity-item::after {
@@ -34,5 +29,27 @@
 }
 
 .activity-item__control-button {
+    height: 100%;
     padding: 0;
+    border-radius: 4px;
+
+    &:hover {
+        box-shadow: rgb(204, 219, 232) 2px 2px 0px 0px inset, rgba(255, 255, 255, 0.5) -2px -2px 0px 1px inset;
+        //box-shadow: rgb(204, 219, 232) 0px 0px 2px inset;
+
+        .activity-item__icon {
+            width: 38px;
+            height: 38px;
+        }
+    }
+
+    &:active {
+        box-shadow: rgb(204, 219, 232) 3px 3px 0px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 0px 1px inset;
+        //box-shadow: rgb(204, 219, 232) 0px 0px 6px 3px inset;
+
+        .activity-item__icon {
+            width: 36px;
+            height: 36px;
+        }
+    }
 }
