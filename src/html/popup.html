@@ -9,11 +9,13 @@
     </head>
     <body>
         <div class="tracking-app">
-            <button class="tracking-app__add-item-button add-item-button" type="button">
-                <span class="add-item-button__inner-wrapper">
-                    <img class="add-item-button__icon" width="48" height="48" alt="Plus" src="icons/plus.svg"/>
-                </span>
-            </button>
+            <div class="tracking-app__footer">
+                <button class="tracking-app__add-item-button add-item-button" type="button">
+                    <span class="add-item-button__inner-wrapper">
+                        <img class="add-item-button__icon" width="48" height="48" alt="Plus" src="icons/plus.svg"/>
+                    </span>
+                </button>
+            </div>
         </div>
 
         <template id="activity-list">
@@ -31,6 +33,20 @@
                     <img class="activity-item__icon" width="40" height="40" alt="Start" src="icons/delete.svg"/>
                 </button>
             </li>
+        </template>
+
+        <template id="creation-form">
+            <form class="tracking-app__item-creation creation-form">
+                <p class="creation-form__label">Activity</p>
+                <!--                    <input class="creation-form__input" type="text" id="new-activity-name" name="new-activity-name" placeholder="Enter activity" required/>-->
+                <div class="creation-form__input" role="textbox" contenteditable></div>
+                <button class="creation-form__button creation-form__button--add" type="button">
+                    <img class="creation-form__icon" width="40" height="40" alt="Add" src="icons/done.svg"/>
+                </button>
+                <button class="creation-form__button creation-form__button--close" type="button">
+                    <img class="creation-form__icon" width="40" height="40" alt="Close" src="icons/delete.svg"/>
+                </button>
+            </form>
         </template>
         <script src="js/TTWGC.min.js"></script>
     </body>
